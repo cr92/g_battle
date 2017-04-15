@@ -1,3 +1,27 @@
 body {
-  background: #345678;
+	font-family: Ubuntu;
+	font-size: 20px;
+}
+
+ul {
+  padding: 0;
+}
+ li {
+   list-style-type: none;
+ }
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.lang_list {
+  display: flex;
+  justify-content: center;
+}
+
+.lang_list li {
+  margin: 10px;
+  font-weight: bold;
+  cursor: pointer
 }
