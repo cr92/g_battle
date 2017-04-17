@@ -1,14 +1,15 @@
 body {
-	font-family: Ubuntu;
-	font-size: 20px;
+  font-family: Ubuntu;
+  font-size: 15px;
 }
 
 ul {
   padding: 0;
 }
- li {
-   list-style-type: none;
- }
+
+li {
+  list-style-type: none;
+}
 
 .container {
   max-width: 1000px;
@@ -24,4 +25,34 @@ ul {
   margin: 10px;
   font-weight: bold;
   cursor: pointer
+}
+
+.popular_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.popular_item {
+  margin: 10px;
+  text-align: center;
+}
+
+.popular_rank {
+  font-size: 15px;
+  margin: 5px;
+}
+
+.avatar {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.space_list_items {
+  margin-bottom: 7px;
+}
+
+.wait_loader {
+  font-size: 60px;
+  text-align: center
 }
