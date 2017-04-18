@@ -15,8 +15,8 @@ function getRepos(user_name) {
 }
 
 function getStars(repos) {
-  repos.data.reduce(function (count, repo) {
-    return count + repo.stargazers_count
+  return repos.data.reduce(function (count, repo) {
+    return count + repo.stargazers_count;
   }, 0);
 }
 

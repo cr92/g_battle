@@ -19,6 +19,7 @@
     "axios": "^0.16.1",
     "font-awesome": "^4.7.0",
     "prop-types": "^15.5.8",
+    "query-string": "^4.3.3",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-router": "^4.1.1",
