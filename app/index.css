@@ -145,3 +145,7 @@ a {
 .reset:hover {
   cursor: pointer
 }
+
+.space-list-items {
+  text-align: center;
+}
