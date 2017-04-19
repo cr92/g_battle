@@ -1,4 +1,4 @@
-My first react app :P
-Built while learning React @
+
+Building my first React @
 # React Training - React Fundamentals 
 https://reacttraining.com/online/react-fundamentals
