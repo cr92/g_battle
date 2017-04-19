@@ -1,9 +1,8 @@
 var React = require('react');
-var NavLink=require('react-router-dom').NavLink;
+var NavLink = require('react-router-dom').NavLink;
 
-function nav()
-{
-  return(
+function nav() {
+  return (
     <ul className='nav'>
       <li>
         <NavLink exact activeClassName='active' to='/'>Home</NavLink>
@@ -18,4 +17,4 @@ function nav()
   );
 }
 
-module.exports=nav;
+module.exports = nav;

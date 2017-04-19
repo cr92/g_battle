@@ -1,18 +1,18 @@
 var React = require('react');
-var Link=require('react-router-dom').Link;
+var Link = require('react-router-dom').Link;
 
-class Home extends React.Component{
+class Home extends React.Component {
   render()
   {
-    return(
+    return (
       <div className='home_container'>
         <h1>GitHub Battle</h1>
         <Link className='button' to='/battle'>
-        Battle
+          Battle
         </Link>
       </div>
     );
   }
 }
 
-module.exports=Home;
+module.exports = Home;

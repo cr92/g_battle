@@ -4,6 +4,7 @@ var PropTypes = require('prop-types');
 var Link = require('react-router-dom').Link;
 var api = require('../utils/api');
 var PlayerPreview = require('./playerPreview');
+var Loading = require('./loading');
 
 function Profile(props) {
   var info = props.profile_info;
@@ -16,7 +17,9 @@ function Profile(props) {
         {info.name && <li>{info.name}</li>}
         {info.location && <li>{info.location}</li>}
         {info.company && <li>{info.company}</li>}
-        {info.blog && <li><a href={info.blog}>{info.blog}</a></li>}
+        {info.blog && <li>
+          <a href={info.blog}>{info.blog}</a>
+        </li>}
       </ul>
       {JSON.stringify(props.info, null, 2)}
     </PlayerPreview>
@@ -30,8 +33,11 @@ Profile.propTypes = {
 function Player(props) {
   return (
     <div>
-      <h1 className='header'>{props.label} : {props.profile.login}</h1>
-      <h3 style={{textAlign: 'center'}}>Score: {props.score}</h3>
+      <h1 className='header'>{props.label}
+        : {props.profile.login}</h1>
+      <h3 style={{
+        textAlign: 'center'
+      }}>Score: {props.score}</h3>
       <Profile profile_info={props.profile}/>
     </div>
   );
@@ -86,7 +92,7 @@ class Results extends React.Component {
     if (loading === true) {
       return (
         <div>
-          <p className='wait_loader'><img src="https://media.giphy.com/media/TkXCbTx9gfUJi/giphy.gif" alt="Loading"/></p>
+          <Loading text='Fighting'/>
         </div>
       );
     }
